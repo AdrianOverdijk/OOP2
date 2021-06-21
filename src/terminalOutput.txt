@@ -1,0 +1,62 @@
+adrian@adrians-mbp overdijk-adrian-tentamen % git log --pretty=format:"%hx %ad%x09%s" --date=short
+a458a3ax 2021-03-29     Final cleanup
+c065e31x 2021-03-29     Add comments and javadoc
+d4baadbx 2021-03-29     Add comments and javadoc
+8818365x 2021-03-29     Test the additions to README.md
+16a1dabx 2021-03-29     Test the additions to README.md
+3f96f91x 2021-03-29     Test the additions to README.md
+8119c61x 2021-03-29     Add terminalOutput.txt
+1df2dadx 2021-03-29     Test update, make garageUML.png show in README.md
+4d1afe8x 2021-03-29     Test update
+fdbd2eax 2021-03-29     Test update
+10d893bx 2021-03-29     Create garageUML.png
+39c5fedx 2021-03-29     Update README.md
+eb3bd2cx 2021-03-29     Move UML file
+d96dfa4x 2021-03-29     Add UML file
+c5167bax 2021-03-29     Remove redundant methods
+f163b87x 2021-03-23     Add main menu
+21c518dx 2021-03-23     Fix connection with interface
+d36a03cx 2021-03-23     Fix connection with interface
+709a15ax 2021-03-23     Add laatKostenZien()
+4b7ca03x 2021-03-23     Add checkUitVoertuigen()
+96dbc5ex 2021-03-23     Add reparatie.java
+5fee944x 2021-03-23     Add object builders
+12b9156x 2021-03-23     Add toString override
+64dd586x 2021-03-23     Add Garage.java with constructors and overrides
+74dba3ex 2021-03-23     Add Auto.java with constructors and overrides
+cc155cfx 2021-03-23     Add constructor and methods
+0d53011x 2021-03-23     Add Fiets.java
+657a392x 2021-03-23     Add constructor and methods
+3f604d5x 2021-03-23     Add Voertuig.java
+bf33723x 2021-03-23     Delete all, start over
+1c9e55cx 2021-03-22     Move int[]bankAccounts to User.java
+4e8f5b7x 2021-03-22     Add additional constructor and getters
+bba13c2x 2021-03-22     Add getFullName()
+3e23778x 2021-03-22     Rearrange code to Main.java
+967e9f5x 2021-03-19     Add createAccount()
+ebac7eax 2021-03-19     Add constructor, override viewAccount()
+fcdd3c5x 2021-03-19     Create Admin.java
+83c72aax 2021-03-19     Reformat code
+4480d1dx 2021-03-19     Add constructor, override viewAccount()
+f053055x 2021-03-19     Create Kid.java
+73f1982x 2021-03-19     Add constants
+9819fb6x 2021-03-19     Add constructors and get & set
+291027fx 2021-03-19     Create BankAccount.java
+a2dbe0cx 2021-03-19     Add constructor, override viewAccount()
+fe6716bx 2021-03-19     Create Adult.java
+3856bd5x 2021-03-19     Format viewAccount()
+5a3f644x 2021-03-18     Make  class abstract
+ccbc7a3x 2021-03-18     Make  class abstract
+573ec31x 2021-03-18     Add constructor, override viewAccount()
+163e429x 2021-03-18     Create Client.java
+cc6c035x 2021-03-18     Add constructor and viewAccount()
+11d1de4x 2021-03-18     Create User.java
+a802c59x 2021-03-18     Create Main.java
+6d5cf4dx 2021-02-05     Update name and student number
+51e5cb6x 2021-02-05     Add more entries
+218cc28x 2021-02-05     Move .gitignore to root
+5eff0b4x 2021-02-05     Add entries in .gitignore
+b6e6919x 2021-02-05     Initial commit
+7dc6d59x 2021-02-03     Update README.md
+e1d7395x 2021-02-03     Update README.md
+59d09cax 2021-02-03     Initial commit
