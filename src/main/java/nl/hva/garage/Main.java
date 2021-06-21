@@ -106,7 +106,11 @@ public class Main {
                 int subKeuze = input.nextInt();
                 subKeuze -= SUBKEUZE_INDEX;
                 Voertuig voertuig = voertuigen.get(subKeuze);
-                System.out.println(voertuig.maxSnelheid() + " KM per uur.");
+                try {
+                    System.out.println(voertuig.maxSnelheid() + " KM per uur.");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             } else if (keuze == 4) {
                 System.out.println("Welk voertuig wil je uitchecken?\nDruk op bijbehorend getal:");
                 System.out.println(goedkoop.toString());
