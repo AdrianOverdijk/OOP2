@@ -25,7 +25,7 @@ public abstract class Voertuig {
     /**
      * @return geeft een maximale snelheid van het voertuig
      */
-    public abstract int maxSnelheid();
+    public abstract int maxSnelheid() throws Exception;
 
     /**
      * @return laat de reparatiekosten zien
