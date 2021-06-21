@@ -10,7 +10,7 @@ Beheer van voertuigen in een garage.
 
 ### UML class diagram
 
-![garageUML](/garageUML.png)  
+![garageUML](OOP2/src/garageUML.png)  
 
 ### Voorwaarden programma
 
