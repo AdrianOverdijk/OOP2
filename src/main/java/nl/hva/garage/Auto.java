@@ -18,6 +18,30 @@ public class Auto extends nl.hva.garage.Voertuig implements nl.hva.garage.Repara
         this.aantalCilinders = aantalCilinders;
     }
 
+    public int getVASTE_KOSTEN_AUTO() {
+        return VASTE_KOSTEN_AUTO;
+    }
+
+    public int getBedrag() {
+        return bedrag;
+    }
+
+    public void setBedrag(int bedrag) {
+        this.bedrag = bedrag;
+    }
+
+    public int getWIEL_SNELHEID() {
+        return WIEL_SNELHEID;
+    }
+
+    public int getAantalCilinders() {
+        return aantalCilinders;
+    }
+
+    public void setAantalCilinders(int aantalCilinders) {
+        this.aantalCilinders = aantalCilinders;
+    }
+
     /**
      * @return geeft de maximale snelheid van de auto terug
      */

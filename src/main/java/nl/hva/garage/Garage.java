@@ -3,6 +3,11 @@
  */
 package nl.hva.garage;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
+
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +28,18 @@ public class Garage {
     public Garage() {
         this.garageNaam = "Default Garage";
         this.voertuigen = new ArrayList<Voertuig>();
+    }
+
+    public List<Voertuig> listVehicles() throws IOException {
+        return Garage.findAll();
+    }
+    public static List<Voertuig> findAll() throws IOException {
+        URL url = Garage.class.getResource("/garage.json");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectReader reader = objectMapper.readerFor(Garage.class);
+
+        return reader.readValues(url).readAll(new ArrayList());
     }
 
     /**

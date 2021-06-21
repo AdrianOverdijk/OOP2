@@ -7,23 +7,21 @@
 
 package nl.hva.garage;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.reflect.TypeToken;
 
-import java.io.File;
-import java.io.IOException;
+import io.javalin.Javalin;
+
+
+import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Scanner;
 
-import static io.javalin.plugin.json.JavalinJson.toJson;
+
 
 public class Main {
 
@@ -31,11 +29,15 @@ public class Main {
         /*
           Om de gekozen menu item te laten overeenkomen met de index van voertuigen
          */
+
+
+
         final int SUBKEUZE_INDEX = 1;
 
         File bestand = new File("src/main/bestand.json");
-        ObjectMapper objectMapper = new ObjectMapper();
 
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY).enable(SerializationFeature.INDENT_OUTPUT);
 
         Garage goedkoop = new Garage("Garage goedkoop");
 
@@ -48,14 +50,12 @@ public class Main {
         ferrari.kosten(200);
         Auto kia = new Auto("Picanto", 4, 3);
 
-        List<Voertuig> voertuigen = new ArrayList<>(Arrays.asList(
-                mountainbike,
-                opoe,
-                eenwieler,
-                opel,
-                ferrari,
-                kia
-        ));
+        List<Voertuig> voertuigen = new ArrayList<>();
+        voertuigen.add(mountainbike);
+        voertuigen.add(opoe);
+        voertuigen.add(opel);
+        voertuigen.add(ferrari);
+        voertuigen.add(kia);
 
         /*
           Toevoegen van nieuwe voertuigen in garage goedkoop
@@ -63,21 +63,19 @@ public class Main {
         for (Voertuig v : voertuigen) {
             goedkoop.checkInVoertuig(v);
         }
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        Gson gson = gsonBuilder.create();
-
-        String JSONObject = gson.toJson(voertuigen);
-        System.out.println("\nConverted JSONObject ==> " + JSONObject);
-
-        Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
-        String prettyJson = prettyGson.toJson(voertuigen);
-        System.out.println("\nPretty JSONObject ==> " + prettyJson);
 
         try {
-            objectMapper.writeValue(bestand, gson.toJson(voertuigen));
+            objectMapper.writeValue(bestand, goedkoop);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+        Javalin app = Javalin.create().start(5000);
+        app.get("/garage", ctx ->
+                ctx.json(new Garage().listVehicles()));
+
 
         boolean loop = true;
 
