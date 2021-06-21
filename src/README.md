@@ -83,7 +83,7 @@ e1d7395x 2021-02-03     Update README.md
 59d09cax 2021-02-03     Initial commit
 ```
 
-Bewijs:  [terminalOutput.txt](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/terminalOutput.txt)
+Bewijs:  [terminalOutput.txt](https://github.com/AdrianOverdijk/OOP2/blob/master/src/terminalOutput.txt)
 
 ##### 2. Abstract class 'A' correct geïmplementeerd
 
