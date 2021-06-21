@@ -296,3 +296,117 @@ public class Garage{
 ```
 
 Bewijs:  [Garage.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Garage.java)
+
+Naast de OOP1 voorwaarden dient je OOP2 programma aan de volgende voorwaarden te voldoen:
+
+##### 1. Gebruikt en implementeert minimaal 2 functionele interfaces uit de package `java.util.function`
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 2. Een classe met 2 endpoints (d.m.v. Javalin framework)
+
+1. GET request waarbij er data uit een tekstbestand wordt gelezen en terug gestuurd.
+2. POST request waarbij er data wordt weggeschreven naar een tekstbestand.
+```java
+        app.get("/garage", ctx ->
+        ctx.json(new Garage().listVehicles()));
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+```java
+Plaats hier je code snippets voor POST request
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo]
+
+##### 3. Een custom Exception "E" gedefiniëerd.
+
+```java
+        try {
+        objectMapper.writeValue(bestand, goedkoop);
+
+        } catch (IOException e) {
+        e.printStackTrace();
+        }
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 4. Custom Exception "E" wordt gebruikt via een `throws` constructie.
+
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 5. Custom Exception "E" wordt gebruikt via een `catch` constructie
+
+```java
+        try {
+        objectMapper.writeValue(bestand, goedkoop);
+
+        } catch (IOException e) {
+        e.printStackTrace();
+        }
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 6. Minimaal 1 `intermediate operation` op een stream
+
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 7. Minimaal 1 `terminal operation` op een stream
+
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
+##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)
+
+```java
+class AutoTest {
+
+    @Test
+    void bij_geen_cylinders_geef_een_error() {
+        Auto kadet = new Auto("kadet", 4, 4);
+        kadet.setAantalCilinders(0);
+
+        int actual = 4;
+        Assertions.assertEquals(kadet.getAantalCilinders(), actual);
+
+    }
+
+    @Test
+    void klopt_de_berekening_van_maximale_snelheid() throws Exception {
+        Auto kadet = new Auto("kadet", 4, 4);
+
+        int actual = 160;
+        Assertions.assertEquals(kadet.maxSnelheid(), actual);
+    }
+
+
+    @Test
+    void repartiekosten_moet_goed_zijn() {
+        Auto kadet = new Auto("kadet", 4, 4);
+        kadet.kosten(50);
+
+        int actual = 120;
+        Assertions.assertEquals(kadet.reparatiekosten(), actual);
+    }
+}
+```
+
+Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+
