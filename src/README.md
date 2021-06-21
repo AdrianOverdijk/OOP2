@@ -100,7 +100,7 @@ public abstract class Voertuig {
 }
 ```
 
-Bewijs:  [Voertuig.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Voertuig.java)
+Bewijs:  [Voertuig.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Voertuig.java)
 
 ##### 3. Subclass implementeert abstract class
 
