@@ -269,7 +269,7 @@ public class Main {
 }
 ```
 
-Bewijs:  [AutoTest.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/test/java/nl/hva/garage/AutoTest.java)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 11. Classes en methodes zijn voldoen aan HBO-ICT coding standards.
 
@@ -365,23 +365,8 @@ Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/ma
         }
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
-##### 6. Minimaal 1 `intermediate operation` op een stream
-
-```java
-Plaats hier je code snippets
-```
-
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
-
-##### 7. Minimaal 1 `terminal operation` op een stream
-
-```java
-Plaats hier je code snippets
-```
-
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
 
 ##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)
 
