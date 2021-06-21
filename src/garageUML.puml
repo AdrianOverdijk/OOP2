@@ -1,0 +1,68 @@
+@startuml
+scale 1.2
+hide circle
+skinparam {
+classAttributeIconSize 0
+monochrome false
+shadowing true
+linetype ortho
+}
+
+Fiets <|.l. Reparatie
+Auto <|.r. Reparatie
+Voertuig <|-d- Auto
+Voertuig <|-d- Fiets
+Fiets "1..*" o-- "1" Garage
+Auto "1..*" o-- "1" Garage
+
+abstract class Voertuig <<abstract>> {
+ -type: String
+ -aantalWielen: int
+
+ +getType():String
+ +getAantalWielen():int
+ + waarschuwingSignaal();
+ <<abstract>> +maxSnelheid()
+ <<abstract>> +reparatiekosten()
+}
+
+class Fiets {
+ -WIEL_SNELHEID: int
+ -FIETSEN_KORTING: int
+ -heeftBel: boolean
+ -bedrag: int
+
+ +maxSnelheid():int
+ +waarschuwingSignaal()
+ +kosten(int bedrag)
+ +reparatiekosten():int
+}
+
+class Auto{
+ -WIEL_SNELHEID: int
+ -VASTE_KOSTEN_AUTO: int
+ -bedrag: int
+ -aantalCilinders:int
+
+ +maxSnelheid():int
+ +waarschuwingSignaal()
+ +kosten(int bedrag)
+ +reparatiekosten():int
+}
+
+class Garage{
+ -voertuigen: ArrayList
+ -garageNaam: String
+
+ +checkInVoertuig()
+ +checkUitVoertuig()
+ +hoeveelIngechecked():String
+ +laatKostenZien():
+ +toString():String
+}
+
+interface Reparatie{
+ +kosten(int bedrag)
+}
+
+@enduml
