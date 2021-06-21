@@ -7,9 +7,23 @@
 
 package nl.hva.garage;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+
+import static io.javalin.plugin.json.JavalinJson.toJson;
 
 public class Main {
 
@@ -18,6 +32,9 @@ public class Main {
           Om de gekozen menu item te laten overeenkomen met de index van voertuigen
          */
         final int SUBKEUZE_INDEX = 1;
+
+        File bestand = new File("src/main/bestand.json");
+        ObjectMapper objectMapper = new ObjectMapper();
 
 
         Garage goedkoop = new Garage("Garage goedkoop");
@@ -31,7 +48,7 @@ public class Main {
         ferrari.kosten(200);
         Auto kia = new Auto("Picanto", 4, 3);
 
-        ArrayList<Voertuig> voertuigen = new ArrayList<>(Arrays.asList(
+        List<Voertuig> voertuigen = new ArrayList<>(Arrays.asList(
                 mountainbike,
                 opoe,
                 eenwieler,
@@ -45,6 +62,21 @@ public class Main {
          */
         for (Voertuig v : voertuigen) {
             goedkoop.checkInVoertuig(v);
+        }
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gson = gsonBuilder.create();
+
+        String JSONObject = gson.toJson(voertuigen);
+        System.out.println("\nConverted JSONObject ==> " + JSONObject);
+
+        Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+        String prettyJson = prettyGson.toJson(voertuigen);
+        System.out.println("\nPretty JSONObject ==> " + prettyJson);
+
+        try {
+            objectMapper.writeValue(bestand, gson.toJson(voertuigen));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         boolean loop = true;

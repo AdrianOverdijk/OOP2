@@ -4,6 +4,7 @@
 package nl.hva.garage;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Garage {
 
@@ -11,7 +12,7 @@ public class Garage {
      * voertuigen is een collectie van Voertuig objecten, deze staan in de garage
      * garagenaam geeft de naam van het gecreëerde garage object aan
      */
-    private ArrayList<Voertuig> voertuigen;
+    private List<Voertuig> voertuigen;
     private String garageNaam;
 
     public Garage(String garageNaam) {
