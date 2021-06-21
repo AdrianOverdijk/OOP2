@@ -1,4 +1,19 @@
 adrian@adrians-mbp overdijk-adrian-tentamen % git log --pretty=format:"%hx %ad%x09%s" --date=short
+
+7914468x 2021-06-21     Add UML png
+19b8a07x 2021-06-21     Add terminal output OOP1
+60f6bebx 2021-06-21     Add UML diagram
+564e95bx 2021-06-21     Add readme
+b7a0ed7x 2021-06-21     Add exception
+aa7a75ex 2021-06-21     Add exception
+472a126x 2021-06-21     Create test
+81391cax 2021-06-21     Add Javalin endpoints
+0061e57x 2021-06-21     Create Tests
+475bc65x 2021-06-21     Add Junit
+31957fex 2021-06-21     Add Gson functionality
+6b9aed8x 2021-06-18     Add Javalin support
+15212aax 2021-06-18     Add Jackson support
+
 a458a3ax 2021-03-29     Final cleanup
 c065e31x 2021-03-29     Add comments and javadoc
 d4baadbx 2021-03-29     Add comments and javadoc
