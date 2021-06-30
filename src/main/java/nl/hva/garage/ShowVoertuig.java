@@ -7,7 +7,13 @@ public class ShowVoertuig {
         Javalin app = Javalin.create().start(8000);
 
         //GET request
+        app.get("/", VoertuigLijst::getAlleVoertuigen);
+        app.get("/:zoekopdracht", VoertuigLijst::zoekVoertuig);
 
         //POST request
+        app.post("/",ctx -> {
+            ctx.status(201);
+            System.out.println("Voertuig toegevoegd.");
+        });
     }
 }
