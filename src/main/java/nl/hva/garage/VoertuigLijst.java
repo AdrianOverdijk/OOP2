@@ -4,7 +4,7 @@ import io.javalin.http.Context;
 
 public class VoertuigLijst {
 
-    static String[] alleVoertuigen = {"Auto", "Fiets"};
+    static public String[] alleVoertuigen = {"Auto", "Fiets"};
 
     public static void getAlleVoertuigen(Context context){
         context.json(alleVoertuigen);
