@@ -346,15 +346,14 @@ Bewijs:  [ShowVoertuig.java](https://github.com/AdrianOverdijk/OOP2/tree/master/
 ##### 3. Een custom Exception "E" gedefiniëerd.
 
 ```java
-        try {
-        objectMapper.writeValue(bestand, goedkoop);
-
-        } catch (IOException e) {
-        e.printStackTrace();
-        }
+public class WaarschuwingError extends Exception{
+    public WaarschuwingError(String errorBoodschap){
+        super(errorBoodschap);
+    }
+}
 ```
 
-Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
+Bewijs:  [WaarschuwingError.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/WaarschuwingError.java)
 
 ##### 4. Custom Exception "E" wordt gebruikt via een `throws` constructie.
 
