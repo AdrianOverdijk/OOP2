@@ -13,6 +13,7 @@ public class Fiets extends nl.hva.garage.Voertuig implements nl.hva.garage.Repar
 
     public Fiets(String type, int aantalWielen, boolean heeftBel) {
         super(type, aantalWielen);
+        super.waarschuwingSignaal();
         this.heeftBel = heeftBel;
     }
 
