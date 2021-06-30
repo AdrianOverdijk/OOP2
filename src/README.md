@@ -165,6 +165,7 @@ public class Fiets extends Voertuig implements Reparatie {
 
     public Fiets(String type, int aantalWielen, boolean heeftBel) {
         super(type, aantalWielen);
+        super.waarschuwingSignaal();
         this.heeftBel = heeftBel;
     }
 }
@@ -174,11 +175,15 @@ Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/mai
 
 ##### 7. `super` keyword gebruikt voor aanroep methode.
 
-```
-Niet kunnen inplementeren :-(
+```java
+    public Fiets(String type, int aantalWielen, boolean heeftBel) {
+        super(type, aantalWielen);
+        super.waarschuwingSignaal();
+        this.heeftBel = heeftBel;
+    }
 ```
 
-Bewijs:  [NIET TOEGEPAST](https://static.freemake.com/blog/wp-content/uploads/2013/01/Awkward-Family-Photos.jpg)
+Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
 
 ##### 8. `instanceof` aangetoond
 
@@ -311,17 +316,26 @@ Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main
 1. GET request waarbij er data uit een tekstbestand wordt gelezen en terug gestuurd.
 2. POST request waarbij er data wordt weggeschreven naar een tekstbestand.
 ```java
-        app.get("/garage", ctx ->
-        ctx.json(new Garage().listVehicles()));
+        //Create App
+        Javalin app = Javalin.create().start(8000);
+
+                //GET request
+                app.get("/", VoertuigLijst::getAlleVoertuigen);
+                app.get("/:zoekopdracht", VoertuigLijst::zoekVoertuig);
+
 ```
 
-Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
+Bewijs:  [ShowVoertuig.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/ShowVoertuig.java)
 
 ```java
-Plaats hier je code snippets voor POST request
+        //POST request
+        app.post("/",ctx -> {
+                ctx.status(201);
+                System.out.println("Voertuig toegevoegd.");
+                });
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo]
+Bewijs:  [ShowVoertuig.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/ShowVoertuig.java)
 
 ##### 3. Een custom Exception "E" gedefiniëerd.
 
