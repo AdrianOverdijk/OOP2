@@ -386,6 +386,21 @@ Bewijs:  [Auto.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main
 
 Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
 
+##### 6. Minimaal 1 `intermediate operation` op een stream
+
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
+
+##### 7. Minimaal 1 `terminal operation` op een stream
+
+```java
+Plaats hier je code snippets
+```
+
+Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
 
 ##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)
 
