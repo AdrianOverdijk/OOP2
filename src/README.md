@@ -10,7 +10,7 @@ Beheer van voertuigen in een garage.
 
 ### UML class diagram
 
-![garageUML](/garageUML.png)  
+![garageUML](https://github.com/AdrianOverdijk/OOP2/blob/master/src/garageUML.png)  
 
 ### Voorwaarden programma
 
@@ -83,7 +83,7 @@ e1d7395x 2021-02-03     Update README.md
 59d09cax 2021-02-03     Initial commit
 ```
 
-Bewijs:  [terminalOutput.txt](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/terminalOutput.txt)
+Bewijs:  [terminalOutput.txt](https://github.com/AdrianOverdijk/OOP2/blob/master/src/terminalOutput.txt)
 
 ##### 2. Abstract class 'A' correct geïmplementeerd
 
@@ -100,7 +100,7 @@ public abstract class Voertuig {
 }
 ```
 
-Bewijs:  [Voertuig.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Voertuig.java)
+Bewijs:  [Voertuig.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Voertuig.java)
 
 ##### 3. Subclass implementeert abstract class
 
@@ -119,7 +119,7 @@ public class Auto extends Voertuig implements Reparatie {
 }
 ```
 
-Bewijs:  [Auto.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Auto.java)
+Bewijs:  [Auto.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Auto.java)
 
 ##### 4. Interface correct geïmplementeerd.
 
@@ -129,7 +129,7 @@ public interface Reparatie {
 }
 ```
 
-Bewijs:  [Reparatie.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Reparatie.java)
+Bewijs:  [Reparatie.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Reparatie.java)
 
 ##### 5. Er is een klasse aanwezig met minimaal twee constructors. 
 
@@ -151,7 +151,7 @@ public class Garage {
 }
 ```
 
-Bewijs:  [Garage.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Garage.java)
+Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
 ##### 6. `super` keyword gebruikt voor aanroep constructor.
 
@@ -170,7 +170,7 @@ public class Fiets extends Voertuig implements Reparatie {
 }
 ```
 
-Bewijs:  [Fiets.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Fiets.java)
+Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
 
 ##### 7. `super` keyword gebruikt voor aanroep methode.
 
@@ -201,7 +201,7 @@ public class Garage {
 }        
 ```
 
-Bewijs:  [Garage.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Garage.java)
+Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
 ##### 9. cast gebruikt voor gebruik van klasse-specifieke methodes.
 
@@ -215,7 +215,7 @@ public class Garage {
 
 ```
 
-Bewijs:  [Garage.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Garage.java)
+Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
 ##### 10. Er is testcode aanwezig om de punten hierboven te demonstreren. (Als je ook OOP2 doet: gebruik testcode-voorwaarden van OOP2).
 
@@ -269,7 +269,7 @@ public class Main {
 }
 ```
 
-Bewijs:  [Main.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Main.java)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 11. Classes en methodes zijn voldoen aan HBO-ICT coding standards.
 
@@ -295,7 +295,7 @@ public class Garage{
 }  
 ```
 
-Bewijs:  [Garage.java](https://gitlab.fdmci.hva.nl/2020-2021-oop-dt/id1s1/overdijk-adrian-tentamen/-/blob/master/src/nl/overdijk/Garage.java)
+Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
 Naast de OOP1 voorwaarden dient je OOP2 programma aan de volgende voorwaarden te voldoen:
 
@@ -304,7 +304,7 @@ Naast de OOP1 voorwaarden dient je OOP2 programma aan de volgende voorwaarden te
 Plaats hier je code snippets
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 2. Een classe met 2 endpoints (d.m.v. Javalin framework)
 
@@ -315,7 +315,7 @@ Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-j
         ctx.json(new Garage().listVehicles()));
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ```java
 Plaats hier je code snippets voor POST request
@@ -334,15 +334,25 @@ Bewijs:  [linknaarhetbronbestandinjerepo]
         }
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 4. Custom Exception "E" wordt gebruikt via een `throws` constructie.
 
 ```java
-Plaats hier je code snippets
+       /**
+     * @return geeft de maximale snelheid van de auto terug
+     */
+    @Override
+    public int maxSnelheid() throws Exception {
+        int wielen = getAantalWielen();
+        if(wielen == 0){
+            throw new Exception();
+        }
+        return wielen * WIEL_SNELHEID * aantalCilinders;
+    }
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
 ##### 5. Custom Exception "E" wordt gebruikt via een `catch` constructie
 
@@ -355,23 +365,8 @@ Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-j
         }
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
 
-##### 6. Minimaal 1 `intermediate operation` op een stream
-
-```java
-Plaats hier je code snippets
-```
-
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
-
-##### 7. Minimaal 1 `terminal operation` op een stream
-
-```java
-Plaats hier je code snippets
-```
-
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
 
 ##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)
 
@@ -408,5 +403,5 @@ class AutoTest {
 }
 ```
 
-Bewijs:  [linknaarhetbronbestandinjerepo](https://gitlab.fdmci.hva.nl/repo-van-jou)
+Bewijs:  [AutoTest.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/test/java/nl/hva/garage/AutoTest.java)
 
