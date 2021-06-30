@@ -306,7 +306,13 @@ Naast de OOP1 voorwaarden dient je OOP2 programma aan de volgende voorwaarden te
 
 ##### 1. Gebruikt en implementeert minimaal 2 functionele interfaces uit de package `java.util.function`
 ```java
-Plaats hier je code snippets
+        // Welkomsboodschap met een methode als lambda, met fuctional interface uit java.util.function
+        UnaryOperator<String> welkomsBoodschap = "   Hallo, "::concat;
+        System.out.println(welkomsBoodschap.apply("Gebruiker 1"));
+
+        // App titel gecreeerd met java.util.function.Supplier
+        Supplier<String> s = ()-> "   Dit is Garage App 2000!";
+        System.out.println(s.get());
 ```
 
 Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)

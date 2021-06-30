@@ -12,15 +12,13 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import io.javalin.Javalin;
-
-
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
-
 import java.util.List;
 import java.util.Scanner;
-
+import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
 
 
 public class Main {
@@ -72,6 +70,13 @@ public class Main {
         }
 
         boolean loop = true;
+        // Welkomsboodschap met een methode als lambda, met fuctional interface uit java.util.function
+        UnaryOperator<String> welkomsBoodschap = "   Hallo, "::concat;
+        System.out.println(welkomsBoodschap.apply("Gebruiker 1"));
+
+        // App titel gecreeerd met java.util.function.Supplier
+        Supplier<String> s = ()-> "   Dit is Garage App 2000!";
+        System.out.println(s.get());
 
         /*
           Main menu loop
