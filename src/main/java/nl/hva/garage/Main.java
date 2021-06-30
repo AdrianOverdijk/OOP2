@@ -20,7 +20,6 @@ import java.util.Scanner;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -28,11 +27,10 @@ public class Main {
           Om de gekozen menu item te laten overeenkomen met de index van voertuigen
          */
 
-
-
         final int SUBKEUZE_INDEX = 1;
 
         File bestand = new File("src/main/bestand.json");
+
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY).enable(SerializationFeature.INDENT_OUTPUT);

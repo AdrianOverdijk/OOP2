@@ -358,20 +358,16 @@ Bewijs:  [WaarschuwingError.java](https://github.com/AdrianOverdijk/OOP2/tree/ma
 ##### 4. Custom Exception "E" wordt gebruikt via een `throws` constructie.
 
 ```java
-       /**
-     * @return geeft de maximale snelheid van de auto terug
-     */
-    @Override
     public int maxSnelheid() throws Exception {
         int wielen = getAantalWielen();
         if(wielen == 0){
-            throw new Exception();
+        throw new WaarschuwingError("Een auto moet wielen hebben.");
         }
         return wielen * WIEL_SNELHEID * aantalCilinders;
-    }
+        }
 ```
 
-Bewijs:  [Garage.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
+Bewijs:  [Auto.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Auto.java)
 
 ##### 5. Custom Exception "E" wordt gebruikt via een `catch` constructie
 

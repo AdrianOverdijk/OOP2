@@ -3,9 +3,6 @@
  */
 package nl.hva.garage;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-
 public class Auto extends nl.hva.garage.Voertuig implements nl.hva.garage.Reparatie {
     /**
      * Met WIEL_SNELHEID en aantal cilinders wordt de maximale snelheid berekend
@@ -53,10 +50,10 @@ public class Auto extends nl.hva.garage.Voertuig implements nl.hva.garage.Repara
     @Override
     public int maxSnelheid() throws Exception {
         int wielen = getAantalWielen();
-        if(wielen == 0){
-            throw new Exception();
-        }
-        return wielen * WIEL_SNELHEID * aantalCilinders;
+            if(wielen == 0){
+                throw new WaarschuwingError("Een auto moet wielen hebben.");
+            }
+            return wielen * WIEL_SNELHEID * aantalCilinders;
     }
 
     /**
