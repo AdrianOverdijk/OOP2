@@ -373,14 +373,18 @@ Bewijs:  [Auto.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main
 
 ```java
         try {
-        objectMapper.writeValue(bestand, goedkoop);
-
-        } catch (IOException e) {
-        e.printStackTrace();
+        if(wielen != 0){
+        return wielen * WIEL_SNELHEID;
+        }
+        }catch (WaarschuwingError e){
+        if(wielen == 0){
+        throw new WaarschuwingError("Een fiets moet wielen hebben")}
+        }
+        return wielen * WIEL_SNELHEID;
         }
 ```
 
-Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Garage.java)
+Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
 
 
 ##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)

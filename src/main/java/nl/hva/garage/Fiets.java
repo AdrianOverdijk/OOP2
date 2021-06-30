@@ -21,8 +21,16 @@ public class Fiets extends nl.hva.garage.Voertuig implements nl.hva.garage.Repar
      * @return geeft de maximale snelheid van de fiets terug
      */
     @Override
-    public int maxSnelheid() {
+    public int maxSnelheid() throws Exception {
         int wielen = getAantalWielen();
+        try {
+            if(wielen != 0){
+                return wielen * WIEL_SNELHEID;
+            }
+        }catch (Exception e){
+            if(wielen == 0){
+            throw new WaarschuwingError("Een fiets moet wielen hebben");}
+        }
         return wielen * WIEL_SNELHEID;
     }
 
