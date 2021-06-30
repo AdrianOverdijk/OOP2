@@ -65,4 +65,16 @@ interface Reparatie{
  +kosten(int bedrag)
 }
 
+class ShowVoertuig{
+ +app.get("/")
+ +app.get("/:zoekvoertuig")
+ +app.post("/")
+ }
+
+ class VoertuigLijst{
+ + alleVoertuigen[]: String
+
+ + getAlleVoertuigen()
+ + zoekVoertuig()
+ }
 @enduml
