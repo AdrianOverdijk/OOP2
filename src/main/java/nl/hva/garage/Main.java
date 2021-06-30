@@ -71,12 +71,6 @@ public class Main {
             e.printStackTrace();
         }
 
-
-        Javalin app = Javalin.create().start(5000);
-        app.get("/garage", ctx ->
-                ctx.json(new Garage().listVehicles()));
-
-
         boolean loop = true;
 
         /*
