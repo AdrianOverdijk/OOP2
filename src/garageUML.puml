@@ -77,4 +77,8 @@ class ShowVoertuig{
  + getAlleVoertuigen()
  + zoekVoertuig()
  }
+
+ class WaarschuwingError{
+ + constructor()
+ }
 @enduml
