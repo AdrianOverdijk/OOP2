@@ -1,4 +1,5 @@
 package nl.hva.garage;
+
 import io.javalin.Javalin;
 
 public class ShowVoertuig {
@@ -11,7 +12,7 @@ public class ShowVoertuig {
         app.get("/:zoekopdracht", VoertuigLijst::zoekVoertuig);
 
         //POST request
-        app.post("/",ctx -> {
+        app.post("/", ctx -> {
             ctx.status(201);
             System.out.println("Voertuig toegevoegd.");
         });

@@ -14,7 +14,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
@@ -72,7 +74,7 @@ public class Main {
         System.out.println(welkomsBoodschap.apply("Gebruiker 1"));
 
         // App titel gecreeerd met java.util.function.Supplier
-        Supplier<String> s = ()-> "   Dit is Garage App 2000!";
+        Supplier<String> s = () -> "   Dit is Garage App 2000!";
         System.out.println(s.get());
 
         /*
@@ -123,8 +125,7 @@ public class Main {
                 Stream.of(voertuigen)
                         .filter(vehicles -> vehicles.contains(opoe))
                         .forEach(vehicles -> System.out.println(vehicles));
-            }
-            else {
+            } else {
                 System.out.println("\tVERKEERDE INVOER, PROBEER NOGMAALS\n\n");
             }
 

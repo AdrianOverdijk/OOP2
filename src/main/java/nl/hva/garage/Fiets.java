@@ -24,12 +24,13 @@ public class Fiets extends nl.hva.garage.Voertuig implements nl.hva.garage.Repar
     public int maxSnelheid() throws Exception {
         int wielen = getAantalWielen();
         try {
-            if(wielen != 0){
+            if (wielen != 0) {
                 return wielen * WIEL_SNELHEID;
             }
-        }catch (Exception e){
-            if(wielen == 0){
-            throw new WaarschuwingError("Een fiets moet wielen hebben");}
+        } catch (Exception e) {
+            if (wielen == 0) {
+                throw new WaarschuwingError("Een fiets moet wielen hebben");
+            }
         }
         return wielen * WIEL_SNELHEID;
     }
@@ -46,7 +47,7 @@ public class Fiets extends nl.hva.garage.Voertuig implements nl.hva.garage.Repar
 
     /**
      * @param bedrag kosten die kunnen worden ingevoerd om de reparatiekosten te berekenen
-     * set this.bedrag
+     *               set this.bedrag
      */
     public void kosten(int bedrag) {
         this.bedrag = bedrag;

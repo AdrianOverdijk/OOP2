@@ -39,21 +39,21 @@ public class Auto extends nl.hva.garage.Voertuig implements nl.hva.garage.Repara
     }
 
     public void setAantalCilinders(int aantalCilinders) {
-        if(aantalCilinders >= 1){
+        if (aantalCilinders >= 1) {
             this.aantalCilinders = aantalCilinders;
-        }else System.out.println("Een auto moet cylinder(s) hebben!");
+        } else System.out.println("Een auto moet cylinder(s) hebben!");
     }
 
-        /**
+    /**
      * @return geeft de maximale snelheid van de auto terug
      */
     @Override
     public int maxSnelheid() throws Exception {
         int wielen = getAantalWielen();
-            if(wielen == 0){
-                throw new WaarschuwingError("Een auto moet wielen hebben.");
-            }
-            return wielen * WIEL_SNELHEID * aantalCilinders;
+        if (wielen == 0) {
+            throw new WaarschuwingError("Een auto moet wielen hebben.");
+        }
+        return wielen * WIEL_SNELHEID * aantalCilinders;
     }
 
     /**
@@ -66,7 +66,7 @@ public class Auto extends nl.hva.garage.Voertuig implements nl.hva.garage.Repara
 
     /**
      * @param bedrag kosten die kunnen worden ingevoerd om de reparatiekosten te berekenen
-     * set this.bedrag
+     *               set this.bedrag
      */
     public void kosten(int bedrag) {
         this.bedrag = bedrag;

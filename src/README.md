@@ -20,6 +20,35 @@ Beheer van voertuigen in een garage.
 
 ```
 adrian@adrians-mbp overdijk-adrian-tentamen % git log --pretty=format:"%hx %ad%x09%s" --date=short
+538e458x 2021-07-01     Update garageUML.png
+866fc86x 2021-07-01     Add stream
+b4ede11x 2021-06-30     Add exception class to UML
+34a4238x 2021-06-30     Add assignment 5 for OOP2, custom exception is used through a try/catch construction
+cea96afx 2021-06-30     Add assignment 5 for OOP2, custom exception is used through a try/catch construction
+17774f4x 2021-06-30     Add assignment 4 for OOP2, custom exception is used through a throws construction
+e513efdx 2021-06-30     Add assignment 3 for OOP2, add custom exception
+34b5965x 2021-06-30     Add assignment 1 for OOP2, two fucntional interfaces from java.util.function
+997680dx 2021-06-30     OOP1 add assignment 7, OOP2 add assignment 2
+4155b45x 2021-06-30     Super keyword used for method call
+0f41787x 2021-06-30     Make alleVoertuigen public
+272365fx 2021-06-30     Add new classes
+de49fccx 2021-06-30     Merge remote-tracking branch 'origin/master'
+
+
+7914468x 2021-06-21     Add UML png
+19b8a07x 2021-06-21     Add terminal output OOP1
+60f6bebx 2021-06-21     Add UML diagram
+564e95bx 2021-06-21     Add readme
+b7a0ed7x 2021-06-21     Add exception
+aa7a75ex 2021-06-21     Add exception
+472a126x 2021-06-21     Create test
+81391cax 2021-06-21     Add Javalin endpoints
+0061e57x 2021-06-21     Create Tests
+475bc65x 2021-06-21     Add Junit
+31957fex 2021-06-21     Add Gson functionality
+6b9aed8x 2021-06-18     Add Javalin support
+15212aax 2021-06-18     Add Jackson support
+
 a458a3ax 2021-03-29     Final cleanup
 c065e31x 2021-03-29     Add comments and javadoc
 d4baadbx 2021-03-29     Add comments and javadoc
