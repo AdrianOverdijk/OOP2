@@ -14,11 +14,10 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -120,7 +119,12 @@ public class Main {
             } else if (keuze == 6) {
                 System.out.println("Tot ziens......");
                 loop = false;
-            } else {
+            } else if (keuze == 7) {
+                Stream.of(voertuigen)
+                        .filter(vehicles -> vehicles.contains(opoe))
+                        .forEach(vehicles -> System.out.println(vehicles));
+            }
+            else {
                 System.out.println("\tVERKEERDE INVOER, PROBEER NOGMAALS\n\n");
             }
 

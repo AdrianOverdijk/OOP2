@@ -389,18 +389,18 @@ Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/mai
 ##### 6. Minimaal 1 `intermediate operation` op een stream
 
 ```java
-Plaats hier je code snippets
+.filter(vehicles -> vehicles.contains(opoe))
 ```
 
-Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 7. Minimaal 1 `terminal operation` op een stream
 
 ```java
-Plaats hier je code snippets
+.forEach(vehicles -> System.out.println(vehicles));
 ```
 
-Bewijs:  [Fiets.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Fiets.java)
+Bewijs:  [Main.java](https://github.com/AdrianOverdijk/OOP2/tree/master/src/main/java/nl/hva/garage/Main.java)
 
 ##### 8. Unit tests met minimaal 60% code coverage (getters en setters tellen niet mee)
 
